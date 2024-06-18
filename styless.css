@@ -1,1 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    font-family: Arial, sans-serif;
+}
+
+.glow-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #86efac; /* Tailwind CSS green-300 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(134, 239, 172, 0.5), 0 0 40px rgba(134, 239, 172, 0.5), 0 0 60px rgba(134, 239, 172, 0.5);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 40px rgba(134, 239, 172, 1), 0 0 80px rgba(134, 239, 172, 1), 0 0 120px rgba(134, 239, 172, 1);
+    transform: scale(1.05);
+}
 
